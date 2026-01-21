@@ -1,7 +1,7 @@
 def main():
     x = input("camelCase: ")
     x = snake_case(x)
-    print(x)
+    print("snake_case: " + x)
 
 def snake_case(camel):
     result = ""
