@@ -13,7 +13,8 @@ else:
         sys.exit("Command-line argument is not a number.")
 
 try:
-    got = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=b1b533f37a14fec3cb0e2f6137f56abf5c3a3f8b4b73600833fdcbd9caa76bb2")
+    # replace YourApiKey with the actual API key as per the directions of https://cs50.harvard.edu/python/psets/4/bitcoin/
+    got = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=YourApiKey")
 except requests.RequestException:
     sys.exit("Try again.")
 
